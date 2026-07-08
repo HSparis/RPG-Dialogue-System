@@ -1,0 +1,13 @@
+{
+  "NPC_DIALOGUE.WarningNoToken": "Debes seleccionar un Token para realizar la tirada.",
+  "NPC_DIALOGUE.DiceFromSheet": "Dados de la Ficha",
+  "NPC_DIALOGUE.Difficulty": "Dificultad",
+  "NPC_DIALOGUE.Successes": "Éxitos",
+  "NPC_DIALOGUE.Cancel": "1s (Cancelan)",
+  "NPC_DIALOGUE.FinalSuccesses": "Éxitos Finales",
+  "NPC_DIALOGUE.SkillCheck": "Tirada de Habilidad",
+  "NPC_DIALOGUE.TotalResult": "Resultado Total",
+  "NPC_DIALOGUE.SuccessNotification": "¡Éxito en la tirada!",
+  "NPC_DIALOGUE.FailNotification": "Fallo en la tirada.",
+  "NPC_DIALOGUE.PageNotFound": "La página no fue encontrada en el Diario"
+}

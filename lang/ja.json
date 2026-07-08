@@ -1,0 +1,13 @@
+{
+  "NPC_DIALOGUE.WarningNoToken": "判定を行うにはトークンを選択する必要があります。",
+  "NPC_DIALOGUE.DiceFromSheet": "キャラクターシートのダイス",
+  "NPC_DIALOGUE.Difficulty": "難易度",
+  "NPC_DIALOGUE.Successes": "成功数",
+  "NPC_DIALOGUE.Cancel": "1の目（相殺）",
+  "NPC_DIALOGUE.FinalSuccesses": "最終成功数",
+  "NPC_DIALOGUE.SkillCheck": "技能判定",
+  "NPC_DIALOGUE.TotalResult": "合計結果",
+  "NPC_DIALOGUE.SuccessNotification": "判定に成功しました！",
+  "NPC_DIALOGUE.FailNotification": "判定に失敗しました。",
+  "NPC_DIALOGUE.PageNotFound": "日記にページが見つかりませんでした"
+}

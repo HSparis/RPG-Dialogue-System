@@ -1,0 +1,22 @@
+{
+  "NPC_DIALOGUE.WarningNoToken": "Você precisa ter um Token selecionado para realizar o teste.",
+  "NPC_DIALOGUE.DiceFromSheet": "Dados da Ficha",
+  "NPC_DIALOGUE.Difficulty": "Dificuldade",
+  "NPC_DIALOGUE.Successes": "Sucessos",
+  "NPC_DIALOGUE.Cancel": "1s (Cancelam)",
+  "NPC_DIALOGUE.FinalSuccesses": "Sucessos Finais",
+  "NPC_DIALOGUE.SkillCheck": "Teste de Perícia",
+  "NPC_DIALOGUE.TotalResult": "Resultado Total",
+  "NPC_DIALOGUE.SuccessNotification": "Sucesso no teste!",
+  "NPC_DIALOGUE.FailNotification": "Falha no teste.",
+  "NPC_DIALOGUE.PageNotFound": "A página não foi encontrada no Diário",
+  "PACKAGE.Module.rpg-dialogue-system": "RPG Dialogue System",
+  "NPC_DIALOGUE.Settings.KeyName": "Tecla de Interação",
+ "NPC_DIALOGUE.Settings.TypewriterName": "Ativar Efeito de Digitação",
+  "NPC_DIALOGUE.Settings.TypewriterHint": "Se marcado, o texto do NPC aparecerá gradualmente letra por letra, simulando um videogame retro.",
+  "NPC_DIALOGUE.Settings.SpeedName": "Velocidade da Digitação (ms)",
+  "NPC_DIALOGUE.Settings.SpeedHint": "O tempo de espera em milissegundos entre cada letra digitada. Valores menores deixam a digitação mais rápida (Padrão: 25).",
+  "NPC_DIALOGUE.Settings.KeyHint": "A tecla que o jogador vai apertar olhando ou mirando no NPC para iniciar a conversa (use letras minúsculas, ex: t, e, f, q).",
+  "NPC_DIALOGUE.Settings.DistName": "Distância Máxima (Quadrados)",
+  "NPC_DIALOGUE.Settings.DistHint": "Distância limite em quadrados do grid para que um jogador consiga abrir o diálogo com o NPC."
+}

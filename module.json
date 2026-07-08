@@ -1,0 +1,55 @@
+{
+  "id": "rpg-dialogue-system",
+  "title": "RPG Dialogue System",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Sparis",
+      "email": "b.reis51@outlook.com.br",
+      "discord": "sparis",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "js/dialogue.js"
+  ],
+  "styles": [
+    {
+      "src": "styles/dialogue.css"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    },
+    {
+      "lang": "pt-br",
+      "name": "Português (Brasil)",
+      "path": "lang/pt-br.json",
+      "flags": {}
+    },
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json",
+      "flags": {}
+    },
+    {
+      "lang": "ja",
+      "name": "日本語",
+      "path": "lang/ja.json",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "description": "comprehensive and immersive video game-style interactive dialogue system for NPCs. It allows branching storylines using Journal pages, features dynamic audio integration, and automates skill checks directly within the UI for multiple systems (D&amp;D 5e, Pathfinder 2e, Tormenta 20, and Vampire V20). Developed by Sparis"
+}

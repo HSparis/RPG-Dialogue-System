@@ -1,0 +1,62 @@
+<!-- 
+  =================================
+  SISTEMA DE DIÁLOGO RPG
+  =================================
+  Template Handlebars para renderização da interface de diálogo.
+  Estrutura:
+  - Header: Avatares dos personagens
+  - Body: Texto do NPC
+  - Footer: Opções de resposta
+-->
+
+<div class="modulo-dialogo-container">
+
+  <!-- ================================
+       SEÇÃO: AVATARES E NOMES
+       ================================ -->
+  <div class="dialogo-linha-retratos">
+    <!-- Jogador -->
+    <div class="dialogo-bloco-avatar">
+      <img class="dialogo-avatar-img" src="{{imgJogador}}" alt="{{jogadorName}}">
+      <div class="dialogo-nome-tag classe-jogador-cor">{{jogadorName}}</div>
+    </div>
+
+    <!-- NPC -->
+    <div class="dialogo-bloco-avatar">
+      <img class="dialogo-avatar-img" src="{{imgNPC}}" alt="{{npcName}}">
+      <div class="dialogo-nome-tag {{npcClass}}">{{npcName}}</div>
+    </div>
+  </div>
+
+  <!-- ================================
+       SEÇÃO: TEXTO E OPÇÕES
+       ================================ -->
+  <div class="dialogo-bloco-inferior">
+    <!-- Texto do NPC (renderizado com efeito typewriter) -->
+    <div class="dialogo-texto-npc">
+      {{{npcText}}}
+    </div>
+
+    <!-- Opções de Resposta -->
+    <div class="dialogo-opcoes-lista">
+      {{#if opcoes.length}}
+        {{#each opcoes}}
+          <button class="opcao-resposta"
+                  data-proximo-id="{{this.proximoId}}"
+                  data-gatilho="{{this.gatilho}}"
+                  data-item-id="{{this.itemId}}"
+                  data-quantidade="{{this.quantidade}}"
+                  data-pericia="{{this.pericia}}"
+                  data-cd="{{this.cd}}">
+            {{this.texto}}
+          </button>
+        {{/each}}
+      {{else}}
+        <!-- Botão padrão para fechar se não houver opções -->
+        <button class="opcao-resposta" data-proximo-id="fechar">
+          {{localize "NPC_DIALOGUE.Default.Close"}}
+        </button>
+      {{/if}}
+    </div>
+  </div>
+</div>

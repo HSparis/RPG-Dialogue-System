@@ -1,0 +1,22 @@
+{
+  "NPC_DIALOGUE.WarningNoToken": "You must select a Token to perform the check.",
+  "NPC_DIALOGUE.DiceFromSheet": "Dice from Sheet",
+  "NPC_DIALOGUE.Difficulty": "Difficulty",
+  "NPC_DIALOGUE.Successes": "Successes",
+  "NPC_DIALOGUE.Cancel": "1s (Cancel)",
+  "NPC_DIALOGUE.FinalSuccesses": "Final Successes",
+  "NPC_DIALOGUE.SkillCheck": "Skill Check",
+  "NPC_DIALOGUE.TotalResult": "Total Result",
+  "NPC_DIALOGUE.SuccessNotification": "Success on check!",
+  "NPC_DIALOGUE.FailNotification": "Failed the check.",
+  "NPC_DIALOGUE.PageNotFound": "The page was not found in the Journal",
+  "PACKAGE.Module.rpg-dialogue-system": "RPG Dialogue System",
+  "NPC_DIALOGUE.Settings.TypewriterName": "Enable Typewriter Effect",
+  "NPC_DIALOGUE.Settings.TypewriterHint": "If checked, NPC text will appear gradually letter by letter, simulating an RPG video game style.",
+  "NPC_DIALOGUE.Settings.SpeedName": "Typing Speed (ms)",
+  "NPC_DIALOGUE.Settings.SpeedHint": "The delay in milliseconds between each typed character. Lower numbers make typing faster (Default: 25).",
+  "NPC_DIALOGUE.Settings.KeyName": "Interaction Key",
+  "NPC_DIALOGUE.Settings.KeyHint": "The key the player will press while hovering or targeting an NPC to start the dialogue (use lowercase, e.g., t, e, f, q).",
+  "NPC_DIALOGUE.Settings.DistName": "Maximum Distance (Squares)",
+  "NPC_DIALOGUE.Settings.DistHint": "The grid square limit allowed for a player to be able to initiate a conversation with an NPC."
+}

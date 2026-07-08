@@ -1,0 +1,207 @@
+/* ========================================
+   JANELA PRINCIPAL DO DIÁLOGO
+   ======================================== */
+
+#janela-dialogo-rpg {
+    background: transparent !important;
+    box-shadow: none !important;
+    pointer-events: none;
+}
+
+#janela-dialogo-rpg.centralizado-rpg {
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 10000 !important;
+    margin: 0 !important;
+}
+
+/* ========================================
+   CONTAINER PRINCIPAL
+   ======================================== */
+
+.modulo-dialogo-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #1a1512 0%, #0d0a08 100%);
+    border: 4px double #8c6d3d;
+    border-radius: 6px;
+    padding: 20px;
+    gap: 15px;
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.8),
+        inset 0 0 15px rgba(140, 109, 61, 0.2);
+}
+
+/* ========================================
+   HEADER - AVATARES E NOMES
+   ======================================== */
+
+.dialogo-linha-retratos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.dialogo-bloco-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+}
+
+.dialogo-avatar-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #555;
+}
+
+/* ========================================
+   NOMES - COM CORES DINÂMICAS
+   ======================================== */
+
+.dialogo-nome-tag {
+    background: linear-gradient(180deg, #2c2c2c 0%, #1a1a1a 100%);
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    border: 1px solid #444;
+    text-align: center;
+}
+
+/* Friendly - Verde */
+.dialogo-nome-tag.disposition-friendly {
+    color: #44ff44;
+    text-shadow: 0 0 8px rgba(68, 255, 68, 0.6);
+    border-color: #228b22;
+}
+
+/* Neutral - Amarelo */
+.dialogo-nome-tag.disposition-neutral {
+    color: #ffdd44;
+    text-shadow: 0 0 8px rgba(255, 221, 68, 0.6);
+    border-color: #b8860b;
+}
+
+/* Hostile - Vermelho */
+.dialogo-nome-tag.disposition-hostile {
+    color: #ff4444;
+    text-shadow: 0 0 8px rgba(255, 68, 68, 0.6);
+    border-color: #8b0000;
+}
+
+/* Secret - Roxo */
+.dialogo-nome-tag.disposition-secret {
+    color: #cc44ff;
+    text-shadow: 0 0 8px rgba(204, 68, 255, 0.6);
+    border-color: #4b0082;
+}
+
+/* Jogador - Ciano */
+.dialogo-nome-tag.classe-jogador-cor {
+    color: #44ccff;
+    text-shadow: 0 0 8px rgba(68, 204, 255, 0.6);
+    border-color: #008b8b;
+}
+
+/* ========================================
+   BLOCO INFERIOR - TEXTO E OPÇÕES
+   ======================================== */
+
+.dialogo-bloco-inferior {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 6px;
+    gap: 10px;
+    width: 100%;
+}
+
+/* ========================================
+   TEXTO DO NPC
+   ======================================== */
+
+.dialogo-texto-npc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f0eae1;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    max-height: 250px;
+    overflow-y: auto;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+/* Scrollbar customizada para melhor aparência */
+.dialogo-texto-npc::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dialogo-texto-npc::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dialogo-texto-npc::-webkit-scrollbar-thumb {
+    background: rgba(140, 109, 61, 0.4);
+    border-radius: 4px;
+}
+
+.dialogo-texto-npc::-webkit-scrollbar-thumb:hover {
+    background: rgba(140, 109, 61, 0.6);
+}
+
+/* ========================================
+   OPÇÕES DE RESPOSTA (BOTÕES)
+   ======================================== */
+
+.dialogo-opcoes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.opcao-resposta {
+    background: transparent;
+    border: 1px solid rgba(140, 109, 61, 0.3);
+    color: #bbb;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.opcao-resposta:hover {
+    color: #ffb84d;
+    border-color: rgba(140, 109, 61, 0.7);
+    background: rgba(140, 109, 61, 0.1);
+    padding-left: 15px;
+}
+
+.opcao-resposta:active {
+    background: rgba(140, 109, 61, 0.2);
+}
